@@ -1,0 +1,4 @@
+# Optional: only to regenerate the PDF report / screenshots
+reportlab>=4.0
+matplotlib>=3.7
+playwright>=1.40
