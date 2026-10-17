@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ biz.business_name }} — Pradhikaran, Nigdi</title>
+<meta name="description" content="{{ biz.business_name }}, a local café in Pradhikaran, Nigdi, Pimpri-Chinchwad. Coffee ₹40, Burger ₹59, French Fries ₹59, Pizza ₹99. Chat with our assistant to explore the menu and order.">
+<link rel="icon" href="{{ url_for('static', filename=profile) }}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="brand" aria-label="{{ biz.business_name }} home">
+      <img src="{{ url_for('static', filename=profile) }}" alt="" width="44" height="44">
+      <span><b>Brew Delice</b><small>CAFÉ · Nigdi</small></span>
+    </a>
+    <nav class="links" id="navlinks" aria-label="Primary">
+      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#attractions">Main Attractions</a>
+      <a href="#about">About</a><a href="#findus">Find Us</a>
+      <a href="#chat" data-open-chat>Chat</a>
+    </nav>
+    <button class="btn btn-primary nav-cta" data-order>🛵 Order Now</button>
+    <button class="burger-btn" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="grain"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">📍 Pradhikaran · Nigdi · Pimpri-Chinchwad</span>
+      <h1>Good Coffee.<br>Great Food.<br><em>Better Moments.</em></h1>
+      <p class="lead">{{ biz.business_name }} is your neighbourhood café in Pradhikaran, Nigdi — coffee at {{ menu.currency }}40, burgers and fries at {{ menu.currency }}59, and pizza at {{ menu.currency }}99. Ask our chatbot anything, any time.</p>
+      <div class="cta-row">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <button class="btn btn-ghost" data-open-chat>💬 Chat With Us</button>
+      </div>
+      <ul class="hero-chips" aria-label="Main attraction prices">
+        {% for it in main_items %}<li><span>{{ it.emoji }}</span> {{ it.name }} <b>{{ menu.currency }}{{ it.price }}</b></li>{% endfor %}
+      </ul>
+    </div>
+    <div class="hero-art reveal">
+      <div class="arch">
+        <img src="{{ url_for('static', filename='images/food/coffee.svg') }}" alt="Illustration of a steaming cup of coffee" width="480" height="360">
+        <div class="steam"><i></i><i></i><i></i></div>
+      </div>
+      <div class="float f1">☕ <b>{{ menu.currency }}40</b></div>
+      <div class="float f2">🍔 <b>{{ menu.currency }}59</b></div>
+      <div class="float f3">🍟 <b>{{ menu.currency }}59</b></div>
+      <div class="float f4">🍕 <b>{{ menu.currency }}99</b></div>
+      <div class="bean b1"></div><div class="bean b2"></div><div class="bean b3"></div>
+      <div class="stamp" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="c" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs><text><textPath href="#c" startOffset="0">• FRESHLY MADE • LOCAL CAFÉ • NIGDI </textPath></text></svg><span>☕</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNNEL -->
+<section class="funnel" aria-label="Digital marketing funnel">
+  <div class="wrap">
+    <p class="funnel-label">AI-Driven Multi-Platform Digital Marketing Strategy</p>
+    <ol class="funnel-steps">
+      <li><span>01</span><b>Content</b><small>Social posts, menu &amp; offers</small></li>
+      <li><span>02</span><b>Reach</b><small>Website · Google · delivery apps</small></li>
+      <li><span>03</span><b>Engagement</b><small>AI chatbot conversations</small></li>
+      <li><span>04</span><b>Enquiries</b><small>Order clicks &amp; customer enquiries</small></li>
+    </ol>
+  </div>
+</section>
+
+<!-- MAIN ATTRACTIONS -->
+<section class="sec" id="attractions">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">⭐ Customer favourites to start with</span><h2>Main Attractions</h2>
+      <p>Four items, one simple price list. Tap a card to see details or order.</p></div>
+    <div class="cards">
+      {% for it in main_items %}
+      <article class="card reveal" data-id="{{ it.id }}" tabindex="0">
+        <div class="card-img skeleton"><img src="{{ url_for('static', filename=it.image) }}" alt="{{ it.name }} illustration" loading="lazy" width="480" height="360"></div>
+        <div class="card-body">
+          <div class="card-top"><h3>{{ it.emoji }} {{ it.name }}</h3><span class="price">{{ menu.currency }}{{ it.price }}</span></div>
+          <p>{{ it.description }}</p>
+          <div class="card-actions">
+            <button class="btn btn-ghost sm" data-view="{{ it.id }}">View Details</button>
+            <button class="btn btn-primary sm" data-order="{{ it.id }}">Order Now</button>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="fine">Food images are illustrative placeholders — replace the files in <code>static/images/food/</code> with real photos of the café's items.</p>
+  </div>
+</section>
+
+<!-- FULL MENU -->
+<section class="sec sec-alt" id="menu">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">🍽 Full menu</span><h2>Our Menu</h2><p>Prices in Indian rupees. Pick a category or browse everything.</p></div>
+    <div class="tabs reveal" role="tablist" aria-label="Menu categories">
+      <button class="tab active" role="tab" data-cat="all">All</button>
+      {% for g in groups %}<button class="tab" role="tab" data-cat="{{ g.name }}">{{ g.emoji }} {{ g.name }}</button>{% endfor %}
+    </div>
+    <div class="board reveal">
+      <h3 class="board-title">Brew Delice Café Menu</h3>
+      <div class="board-grid">
+        {% for g in groups %}
+        <section class="grp" data-cat="{{ g.name }}">
+          <h4 class="grp-title"><span>{{ g.emoji }}</span> {{ g.name }}</h4>
+          <ul class="board-list">
+            {% for it in g['items'] %}
+            <li class="row">
+              <button class="row-main" data-view="{{ it.id }}"><span class="nm">{{ it.name }}{% if it.main_attraction %} <i class="star" title="Main Attraction">★</i>{% endif %}</span><span class="dots"></span><span class="pr">{{ menu.currency }}{{ it.price }}</span></button>
+              {% if it.orderable != false %}<button class="btn btn-primary sm" data-order="{{ it.id }}">Order</button>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endfor %}
+      </div>
+      <p class="fine">★ = Main Attraction. Prices as printed on the café's menu card; prices on delivery apps may differ. Edit <code>data/menu.json</code> to update.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">☕ About us</span>
+      <h2>A local, customer-oriented café</h2>
+      <p>{{ biz.business_name }} is a local café in Pradhikaran, Nigdi, Pimpri-Chinchwad, owned by <b>{{ biz.owner }}</b>. The focus is simple: good coffee, honest prices and quick, friendly service for students, families and professionals nearby.</p>
+      <p>This website and AI chatbot are a digital-marketing prototype that helps customers discover the menu, check prices, find the café and reach out — 24×7, without waiting for a reply.</p>
+      <div class="about-actions"><a href="#findus" class="btn btn-ghost sm">📍 Find Us</a><button class="btn btn-primary sm" data-open-chat>💬 Ask the chatbot</button></div>
+    </div>
+    <div class="how reveal">
+      <h3>How the chatbot supports the café</h3>
+      <ol>
+        <li><b>Customer engagement</b> — greets visitors and answers questions instantly.</li>
+        <li><b>Product discovery</b> — menu, Main Attractions and prices in a tap.</li>
+        <li><b>Ordering intent</b> — “Order Now” routes to the café's verified ordering channel.</li>
+        <li><b>Enquiry capture</b> — name, contact and message stored for follow-up.</li>
+        <li><b>Analytics</b> — every step is measured on the admin dashboard.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FIND US -->
+<section class="sec sec-alt" id="findus">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">📍 Find Us</span><h2>Visit {{ biz.business_name }}</h2></div>
+    <div class="find-grid">
+      <div class="map-card reveal">
+        <div class="map-frame">
+          <iframe title="Map showing {{ biz.business_name }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="{{ biz.google_maps_embed_url }}"></iframe>
+          <div class="map-fallback"><span>🗺️</span><b>Map preview needs an internet connection</b><small>Use “Get Directions” to open Google Maps.</small></div>
+        </div>
+        <div class="addr">
+          <h3>{{ biz.business_name }}</h3>
+          <p>{{ biz.address.line1 }}<br>{{ biz.address.city }}, {{ biz.address.state }} – {{ biz.address.pincode }}</p>
+          <p class="fine">
+            {% if biz.opening_hours %}Opening hours: see Google listing.{% else %}🕐 Opening hours: not verified yet — check the Google listing.{% endif %}
+            {% if not biz.maps_link_verified %}<br>The map buttons open a Google Maps search for the café.{% endif %}
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" data-track-platform="google_maps" href="{{ biz.google_maps_url }}" target="_blank" rel="noopener">🧭 Get Directions</a>
+            <a class="btn btn-ghost" data-track-platform="google_search" href="{{ biz.google_business_url }}" target="_blank" rel="noopener">🔎 View on Google</a>
+          </div>
+        </div>
+      </div>
+      <form class="enq reveal" id="enqForm" novalidate>
+        <h3>💬 Send an enquiry</h3>
+        <p class="fine">The café team can follow up on your message. (Stored locally in SQLite for this prototype.)</p>
+        <label>Your name<input name="name" autocomplete="name" maxlength="60" required></label>
+        <label>Phone or email<input name="contact" autocomplete="tel" maxlength="100" required></label>
+        <label>Item (optional)<select name="item"><option value="">— General enquiry —</option>{% for g in groups %}<optgroup label="{{ g.name }}">{% for it in g['items'] %}<option value="{{ it.id }}">{{ it.name }}</option>{% endfor %}</optgroup>{% endfor %}</select></label>
+        <label>Message<textarea name="message" rows="4" maxlength="500" required></textarea></label>
+        <div class="form-msg" id="enqMsg" role="status" aria-live="polite"></div>
+        <button class="btn btn-primary" type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="foot-brand"><img src="{{ url_for('static', filename=profile) }}" alt="" width="56" height="56"><div><b>{{ biz.business_name }}</b><p>{{ biz.address.line1 }}, {{ biz.address.city }}<br>{{ biz.address.state }} – {{ biz.address.pincode }}</p></div></div>
+    <div><h4>Explore</h4><a href="#menu">Menu</a><a href="#attractions">Main Attractions</a><a href="#about">About</a><a href="#findus">Find Us</a><a href="/dashboard">Admin dashboard</a></div>
+    <div class="proj"><h4>Capstone project</h4><p>{{ biz.project.course }} · {{ biz.project.college }}</p><p>Guide: {{ biz.project.guide }}</p><p>Team: {{ biz.project.team|join(' · ') }}</p></div>
+  </div>
+  <div class="wrap foot-bottom"><span>© {{ biz.business_name }} · Student prototype — not an official ordering system.</span><span>Prices as provided by the project team.</span></div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Scroll to top">↑</button>
+
+<!-- Item modal -->
+<div class="modal" id="itemModal" hidden role="dialog" aria-modal="true" aria-labelledby="imTitle">
+  <div class="modal-box">
+    <button class="modal-x" data-close aria-label="Close">✕</button>
+    <div class="modal-img"><img id="imImg" alt=""></div>
+    <div class="modal-body">
+      <h3 id="imTitle"></h3><div class="price big" id="imPrice"></div><p id="imDesc"></p>
+      <div class="cta-row"><button class="btn btn-primary" id="imOrder">🛒 Order Now</button><button class="btn btn-ghost" id="imEnq">📝 Add to Enquiry</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Order modal -->
+<div class="modal" id="orderModal" hidden role="dialog" aria-modal="true" aria-labelledby="omTitle">
+  <div class="modal-box narrow">
+    <button class="modal-x" data-close aria-label="Close">✕</button>
+    <div class="modal-body">
+      <h3 id="omTitle">Choose your ordering platform</h3>
+      <p id="omItem" class="om-item"></p>
+      <div id="omList" class="om-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Chatbot -->
+<button class="chat-fab" id="chatFab" aria-label="Open chat" aria-expanded="false"><span class="fab-ic">💬</span><span class="fab-txt">Chat with us</span><i class="pulse"></i></button>
+<section class="chat" id="chat" aria-label="{{ biz.business_name }} chatbot" hidden>
+  <header class="chat-head">
+    <img src="{{ url_for('static', filename=profile) }}" alt="" width="42" height="42">
+    <div><b>{{ biz.business_name }}</b><small><i class="dot"></i> Virtual assistant · prototype</small></div>
+    <button class="chat-x" id="chatClose" aria-label="Close chat">✕</button>
+  </header>
+  <div class="chat-body" id="chatBody" aria-live="polite"></div>
+  <div class="chips" id="chatChips"></div>
+  <form class="chat-form" id="chatForm" autocomplete="off">
+    <input id="chatInput" type="text" maxlength="500" placeholder="Type a message… e.g. “coffee price”" aria-label="Type a message">
+    <button type="submit" aria-label="Send">➤</button>
+  </form>
+</section>
+
+<script id="cfg" type="application/json">{{ cfg|tojson }}</script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

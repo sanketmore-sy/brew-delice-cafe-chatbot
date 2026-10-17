@@ -1,0 +1,29 @@
+{
+  "_note": "Only VERIFIED information may be filled in. null = not verified yet. The web search done on 14 Oct 2026 did not find an exact 'Brew Delice Café' Google/Zomato/Swiggy/Toing listing, so maps/contact/hours are left unverified. Replace google_maps_url with the café's real Google Maps share link (Maps > Share > Copy link).",
+  "business_name": "Brew Delice Café",
+  "tagline": "Good Coffee. Great Food. Better Moments.",
+  "owner": "Tanmay Koli",
+  "address": {
+    "line1": "Pradhikaran, Nigdi",
+    "city": "Pimpri-Chinchwad",
+    "state": "Maharashtra",
+    "pincode": "411044",
+    "country": "India",
+    "verified_listing_address": null
+  },
+  "location": {"lat": null, "lng": null},
+  "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Brew+Delice+Caf%C3%A9+Pradhikaran+Nigdi+Pimpri-Chinchwad+411044",
+  "google_maps_embed_url": "https://maps.google.com/maps?q=Brew+Delice+Caf%C3%A9+Pradhikaran+Nigdi+Pimpri-Chinchwad+411044&output=embed",
+  "google_business_url": "https://www.google.com/search?q=Brew+Delice+Caf%C3%A9+Pradhikaran+Nigdi",
+  "maps_link_verified": false,
+  "opening_hours": null,
+  "contact": {"phone": null, "email": null, "whatsapp": null, "instagram": null},
+  "profile_image": "images/profile.svg",
+  "project": {
+    "title": "Design and Development of an AI-Driven Multi-Platform Digital Marketing Strategy with Chatbot Automation for Startup Growth",
+    "college": "Pimpri Chinchwad College of Engineering, Pune",
+    "course": "Digital Marketing (MDM) Capstone Project",
+    "guide": "Ms. Shalu Mahajan",
+    "team": ["Pushkar Singh", "Sushant Vairalkar", "Kedar Malbhage"]
+  }
+}

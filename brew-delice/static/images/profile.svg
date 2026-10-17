@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Brew Delice Café profile placeholder">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a2f20"/><stop offset="1" stop-color="#1f1410"/></linearGradient></defs>
+  <circle cx="256" cy="256" r="256" fill="url(#g)"/>
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#d9a15c" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+  <g transform="translate(256 205)">
+    <path d="M-86 -20h150v62a62 62 0 0 1-62 62h-26a62 62 0 0 1-62-62z" fill="#f7ecd9"/>
+    <path d="M64 -2h18a28 28 0 0 1 0 56h-24" fill="none" stroke="#f7ecd9" stroke-width="14" stroke-linecap="round"/>
+    <ellipse cx="-11" cy="-20" rx="75" ry="10" fill="#c98a4b"/>
+    <path d="M-45 -52c-14-16 14-26 0-44M-8 -52c-14-16 14-26 0-44M29 -52c-14-16 14-26 0-44" fill="none" stroke="#e8c79b" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+    <rect x="-112" y="76" width="202" height="12" rx="6" fill="#c98a4b"/>
+  </g>
+  <text x="256" y="365" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="50" font-weight="700" fill="#f7ecd9" letter-spacing="3">BREW DELICE</text>
+  <text x="256" y="415" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#d9a15c" letter-spacing="14">CAFÉ</text>
+</svg>

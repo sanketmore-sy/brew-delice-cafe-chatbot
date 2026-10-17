@@ -1,0 +1,7 @@
+Flask>=3.0
+scikit-learn>=1.3
+numpy>=1.24
+# Only needed to regenerate the PDF report / screenshots (optional):
+reportlab>=4.0
+matplotlib>=3.7
+playwright>=1.40

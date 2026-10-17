@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Coffee illustration">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e7cf"/><stop offset="1" stop-color="#e9c99b"/></linearGradient>
+  <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#ead9bd"/></linearGradient></defs>
+  <rect width="480" height="360" fill="url(#bg)"/><circle cx="380" cy="70" r="90" fill="#fff" opacity=".25"/><circle cx="70" cy="300" r="70" fill="#b9792f" opacity=".14"/>
+  <ellipse cx="240" cy="290" rx="150" ry="26" fill="#3b2415" opacity=".22"/>
+  <ellipse cx="240" cy="278" rx="140" ry="28" fill="#fffaf0"/><ellipse cx="240" cy="274" rx="112" ry="20" fill="#ead9bd"/>
+  <path d="M150 150h190v62a95 95 0 0 1-95 95h0a95 95 0 0 1-95-95z" fill="url(#cup)" transform="translate(-5 -26)"/>
+  <path d="M335 140h20a40 40 0 0 1 0 80h-34" transform="translate(-5 -26)" fill="none" stroke="#ead9bd" stroke-width="18" stroke-linecap="round"/>
+  <ellipse cx="240" cy="124" rx="92" ry="22" fill="#6a4128"/><ellipse cx="240" cy="124" rx="82" ry="16" fill="#8a5a36"/>
+  <path d="M240 134c-26-16-34-28-22-34 8-4 16 2 22 8 6-6 14-12 22-8 12 6 4 18-22 34z" fill="#f3dcb8" opacity=".95"/>
+  <g fill="none" stroke="#b9792f" stroke-width="7" stroke-linecap="round" opacity=".6"><path d="M205 90c-16-16 16-26 0-46"/><path d="M243 86c-16-16 16-26 0-46"/><path d="M281 90c-16-16 16-26 0-46"/></g>
+</svg>

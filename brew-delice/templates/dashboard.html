@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chatbot Analytics — {{ biz.business_name }}</title>
+<link rel="icon" href="{{ url_for('static', filename=profile) }}">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dash-body" data-chart-local="{{ 1 if chart_local else 0 }}">
+<header class="dash-top"><div class="wrap">
+  <img src="{{ url_for('static', filename=profile) }}" alt="">
+  <div><h1>BREW DELICE CAFÉ</h1><small>Chatbot Analytics · Admin dashboard</small></div>
+  <div class="sp">
+    <select id="scope" aria-label="Data scope"><option value="1">All data</option><option value="0">Live only (exclude seeded demo rows)</option></select>
+    <button id="refresh" type="button">⟳ Refresh</button>
+    <a href="/">← Website</a>
+  </div>
+</div></header>
+<div class="notice"><div class="wrap">⚠️ {{ notice }} <span id="demoCount"></span></div></div>
+
+<main class="wrap dash-main">
+  <section class="kpis" aria-label="Key metrics">
+    <div class="kpi"><small>Total Conversations</small><b id="k-conv">–</b><em>chat sessions</em></div>
+    <div class="kpi"><small>Menu Views</small><b id="k-menu">–</b><em>chat + website</em></div>
+    <div class="kpi"><small>Item Views</small><b id="k-views">–</b><em>details opened</em></div>
+    <div class="kpi"><small>Order Clicks</small><b id="k-order">–</b><em>“Order Now” taps</em></div>
+    <div class="kpi"><small>Enquiries</small><b id="k-enq">–</b><em>stored in SQLite</em></div>
+    <div class="kpi"><small>Most Popular Item</small><b id="k-top" style="font-size:26px">–</b><em>by items selected</em></div>
+  </section>
+  <section class="kpis four" aria-label="Secondary metrics">
+    <div class="kpi"><small>User messages</small><b id="k-msg">–</b></div>
+    <div class="kpi"><small>Fallback replies</small><b id="k-fb">–</b><em>not understood</em></div>
+    <div class="kpi"><small>Channel clicks</small><b id="k-plat">–</b><em>platform / maps links</em></div>
+    <div class="kpi"><small>Feedback 👍 / 👎</small><b id="k-feed">–</b></div>
+  </section>
+
+  <section class="rates">
+    <div class="rate"><b id="r-enq">–</b><div><span>Enquiry Conversion Rate</span><small>chat conversations that ended in an enquiry ÷ all conversations × 100</small></div></div>
+    <div class="rate"><b id="r-ctr">–</b><div><span>Order Click-Through Rate</span><small>“Order Now” clicks on an item ÷ items selected × 100</small></div></div>
+  </section>
+
+  <section class="charts">
+    <div class="chart-card w3"><h3>Most selected menu items</h3><canvas id="c-items"></canvas></div>
+    <div class="chart-card w3"><h3>Order clicks by item</h3><canvas id="c-orders"></canvas></div>
+    <div class="chart-card"><h3>Chatbot intents</h3><canvas id="c-intents"></canvas></div>
+    <div class="chart-card"><h3>Enquiries over time</h3><canvas id="c-enq"></canvas></div>
+    <div class="chart-card"><h3>Ordering &amp; contact channel clicks</h3><canvas id="c-plat"></canvas></div>
+  </section>
+
+  <section class="tbl-card">
+    <h3>Recent enquiries</h3>
+    <table><thead><tr><th>#</th><th>Name</th><th>Contact</th><th>Message</th><th>Item</th><th>Source</th><th>Date</th><th>Status</th></tr></thead><tbody id="enqBody"></tbody></table>
+    <div class="empty" id="enqEmpty" hidden>No enquiries yet. Submit one from the chatbot (“I want to enquire”) or the Find Us form.</div>
+  </section>
+  <section class="tbl-card" id="fbCard" hidden><h3>“What were you looking for?” (negative feedback)</h3><ul id="fbList"></ul></section>
+  <p class="dash-note">Funnel: Content → Reach → Engagement → Enquiries. “Channel clicks” counts taps on ordering-platform links (only if a platform is verified) and the Google Maps / Google links.</p>
+</main>
+<script id="items" type="application/json">{{ items|tojson }}</script>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

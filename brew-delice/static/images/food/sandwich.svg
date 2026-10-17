@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Sandwich illustration"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8e9d1"/><stop offset="1" stop-color="#ecc994"/></linearGradient></defs>
+<rect width="480" height="360" fill="url(#bg)"/><circle cx="400" cy="60" r="80" fill="#fff" opacity=".25"/><ellipse cx="240" cy="306" rx="150" ry="18" fill="#3b2415" opacity=".2"/>
+<path d="M90 230 L240 120 L390 230 Z" fill="#e9b768"/><path d="M110 226 L240 132 L370 226 Z" fill="#f6d99b"/>
+<path d="M100 238 L240 150 L380 238 L370 252 L240 170 L110 252Z" fill="#5f9a3b"/><path d="M118 258 L240 182 L362 258 L350 272 L240 198 L130 272Z" fill="#e24b36"/>
+<path d="M126 280 L240 210 L354 280 L346 292 L240 224 L134 292Z" fill="#f4b82a"/><path d="M90 300 L240 196 L390 300 Z" fill="#e0a04a"/></svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Burger illustration">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8e9d1"/><stop offset="1" stop-color="#ecc994"/></linearGradient>
+  <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0a04a"/><stop offset="1" stop-color="#c47f2c"/></linearGradient></defs>
+  <rect width="480" height="360" fill="url(#bg)"/><circle cx="400" cy="60" r="80" fill="#fff" opacity=".25"/>
+  <ellipse cx="240" cy="306" rx="150" ry="20" fill="#3b2415" opacity=".2"/>
+  <path d="M110 160a130 90 0 0 1 260 0z" fill="url(#bun)"/>
+  <g fill="#fbe8bf"><ellipse cx="185" cy="115" rx="10" ry="5" transform="rotate(-20 185 115)"/><ellipse cx="240" cy="98" rx="10" ry="5"/><ellipse cx="295" cy="115" rx="10" ry="5" transform="rotate(20 295 115)"/><ellipse cx="215" cy="136" rx="10" ry="5" transform="rotate(-10 215 136)"/><ellipse cx="268" cy="136" rx="10" ry="5" transform="rotate(10 268 136)"/></g>
+  <path d="M100 166c20 16 30-8 50 8s30-8 50 8 30-8 50 8 30-8 50 8 30-8 40 0v8H100z" fill="#5f9a3b"/>
+  <path d="M112 182h256l-18 28H130z" fill="#e24b36"/>
+  <path d="M104 196h272l-14 16-36-10-38 14-38-14-38 14-38-14-36 10z" fill="#f4b82a"/>
+  <rect x="106" y="210" width="268" height="36" rx="18" fill="#5a3320"/>
+  <path d="M110 252h260a20 20 0 0 1-20 36H130a20 20 0 0 1-20-36z" fill="url(#bun)"/>
+</svg>

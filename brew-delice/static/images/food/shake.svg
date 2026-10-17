@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Shake illustration"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e7cf"/><stop offset="1" stop-color="#e9c99b"/></linearGradient><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9b6a45"/><stop offset="1" stop-color="#5a3622"/></linearGradient></defs>
+<rect width="480" height="360" fill="url(#bg)"/><circle cx="400" cy="70" r="80" fill="#fff" opacity=".25"/><ellipse cx="240" cy="326" rx="90" ry="13" fill="#3b2415" opacity=".2"/>
+<path d="M170 100h140l-16 215a18 18 0 0 1-18 15h-72a18 18 0 0 1-18-15z" fill="url(#s)"/><path d="M170 100h140l-5 70H175z" fill="#fff" opacity=".15"/>
+<path d="M165 100c0-30 30-46 75-46s75 16 75 46z" fill="#fffaf0"/><path d="M200 60c0-24 16-36 40-36s40 12 40 36z" fill="#fffaf0"/>
+<path d="M262 20 L296 -10" stroke="#e24b36" stroke-width="9" stroke-linecap="round"/><path d="M262 20 L300 215" stroke="#e24b36" stroke-width="9" stroke-linecap="round"/><circle cx="240" cy="44" r="9" fill="#b52e20"/></svg>

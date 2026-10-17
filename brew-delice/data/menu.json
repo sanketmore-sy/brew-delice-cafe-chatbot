@@ -1,0 +1,672 @@
+{
+  "_note": "Main Attractions + prices (Coffee 40, Burger 59, French Fries 59, Pizza 99) were provided by the project team. The other items and prices were transcribed from the café's printed menu card (17 Oct 2026). Descriptions are generic placeholders - edit freely. NOTE: the printed card's logo reads 'BREW COFFEE' - confirm with the café that it is the same outlet.",
+  "currency": "₹",
+  "categories": [
+    "Burger",
+    "Sandwich",
+    "Mojito",
+    "Coffee & Shakes",
+    "French Fries",
+    "Pizza",
+    "Combo & Extras"
+  ],
+  "items": [
+    {
+      "id": "coffee",
+      "name": "Coffee",
+      "emoji": "☕",
+      "price": 40,
+      "category": "Coffee & Shakes",
+      "main_attraction": true,
+      "available": true,
+      "image": "images/food/coffee.svg",
+      "description": "A freshly made cup of coffee, served hot at Brew Delice Café.",
+      "long_description": "Our signature cup for a quick break or a long conversation. Freshly made and served hot at Brew Delice Café, Pradhikaran, Nigdi.",
+      "keywords": [
+        "coffee",
+        "cofee",
+        "kofi"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      },
+      "orderable": true
+    },
+    {
+      "id": "burger",
+      "name": "Burger",
+      "emoji": "🍔",
+      "price": 59,
+      "category": "Burger",
+      "main_attraction": true,
+      "available": true,
+      "image": "images/food/burger.svg",
+      "description": "A hot, filling burger - a quick bite at a student-friendly price.",
+      "long_description": "A hot, filling burger prepared at Brew Delice Café. A satisfying quick bite at a pocket-friendly price.",
+      "keywords": [
+        "burger",
+        "burgers",
+        "burgar"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      },
+      "orderable": true
+    },
+    {
+      "id": "fries",
+      "name": "French Fries",
+      "emoji": "🍟",
+      "price": 59,
+      "category": "French Fries",
+      "main_attraction": true,
+      "available": true,
+      "image": "images/food/fries.svg",
+      "description": "Crispy, golden French fries - perfect to share or enjoy solo.",
+      "long_description": "Crispy, golden French fries served hot. Great as a side with your burger or on their own.",
+      "keywords": [
+        "french fries",
+        "fries",
+        "french fry",
+        "fry",
+        "frenchfries"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      },
+      "orderable": true
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "emoji": "🍕",
+      "price": 99,
+      "category": "Pizza",
+      "main_attraction": true,
+      "available": true,
+      "image": "images/food/pizza.svg",
+      "description": "A freshly baked pizza from Brew Delice Café, made to share.",
+      "long_description": "A freshly baked pizza from Brew Delice Café - great for sharing with friends over coffee.",
+      "keywords": [
+        "pizza",
+        "piza",
+        "pizzas",
+        "pizaa"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      },
+      "orderable": true
+    },
+    {
+      "id": "veg_burger",
+      "name": "Veg Burger",
+      "emoji": "🍔",
+      "price": 30,
+      "category": "Burger",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/burger.svg",
+      "description": "Veg Burger from the Brew Delice Café menu card.",
+      "keywords": [
+        "veg burger"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "veg_cheese_burger",
+      "name": "Veg Cheese Burger",
+      "emoji": "🍔",
+      "price": 50,
+      "category": "Burger",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/burger.svg",
+      "description": "Veg Cheese Burger from the Brew Delice Café menu card.",
+      "keywords": [
+        "veg cheese burger"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "spicy_burger",
+      "name": "Spicy Burger",
+      "emoji": "🍔",
+      "price": 50,
+      "category": "Burger",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/burger.svg",
+      "description": "Spicy Burger from the Brew Delice Café menu card.",
+      "keywords": [
+        "spicy burger"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "special_burger",
+      "name": "Special Burger",
+      "emoji": "🍔",
+      "price": 60,
+      "category": "Burger",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/burger.svg",
+      "description": "Special Burger from the Brew Delice Café menu card.",
+      "keywords": [
+        "special burger"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "double_tikki_burger",
+      "name": "Double Tikki Burger",
+      "emoji": "🍔",
+      "price": 70,
+      "category": "Burger",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/burger.svg",
+      "description": "Double Tikki Burger from the Brew Delice Café menu card.",
+      "keywords": [
+        "double tikki burger"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "non_grill_sandwich",
+      "name": "Non Grill Sandwich",
+      "emoji": "🥪",
+      "price": 40,
+      "category": "Sandwich",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/sandwich.svg",
+      "description": "Non Grill Sandwich from the Brew Delice Café menu card.",
+      "keywords": [
+        "non grill sandwich"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "veg_cheese_sandwich",
+      "name": "Veg Cheese Sandwich",
+      "emoji": "🥪",
+      "price": 50,
+      "category": "Sandwich",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/sandwich.svg",
+      "description": "Veg Cheese Sandwich from the Brew Delice Café menu card.",
+      "keywords": [
+        "veg cheese sandwich"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "spicy_paneer_sandwich",
+      "name": "Spicy Paneer Sandwich",
+      "emoji": "🥪",
+      "price": 60,
+      "category": "Sandwich",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/sandwich.svg",
+      "description": "Spicy Paneer Sandwich from the Brew Delice Café menu card.",
+      "keywords": [
+        "spicy paneer sandwich",
+        "spicy panner sandwich"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "mix_veg_special_sandwich",
+      "name": "Mix Veg Special Sandwich",
+      "emoji": "🥪",
+      "price": 70,
+      "category": "Sandwich",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/sandwich.svg",
+      "description": "Mix Veg Special Sandwich from the Brew Delice Café menu card.",
+      "keywords": [
+        "mix veg special sandwich"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "tikki_grill_sandwich",
+      "name": "Tikki Grill Sandwich",
+      "emoji": "🥪",
+      "price": 70,
+      "category": "Sandwich",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/sandwich.svg",
+      "description": "Tikki Grill Sandwich from the Brew Delice Café menu card.",
+      "keywords": [
+        "tikki grill sandwich"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "mint_mojito",
+      "name": "Mint Mojito",
+      "emoji": "🍹",
+      "price": 30,
+      "category": "Mojito",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/mojito.svg",
+      "description": "Mint Mojito from the Brew Delice Café menu card.",
+      "keywords": [
+        "mint mojito"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "blue_currant_mojito",
+      "name": "Blue Currant Mojito",
+      "emoji": "🍹",
+      "price": 30,
+      "category": "Mojito",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/mojito.svg",
+      "description": "Blue Currant Mojito from the Brew Delice Café menu card.",
+      "keywords": [
+        "blue currant mojito",
+        "blue current mojito"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "green_apple_mojito",
+      "name": "Green Apple Mojito",
+      "emoji": "🍹",
+      "price": 30,
+      "category": "Mojito",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/mojito.svg",
+      "description": "Green Apple Mojito from the Brew Delice Café menu card.",
+      "keywords": [
+        "green apple mojito"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "mango_mojito",
+      "name": "Mango Mojito",
+      "emoji": "🍹",
+      "price": 30,
+      "category": "Mojito",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/mojito.svg",
+      "description": "Mango Mojito from the Brew Delice Café menu card.",
+      "keywords": [
+        "mango mojito"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "thick_cold_coffee",
+      "name": "Thick Cold Coffee",
+      "emoji": "☕",
+      "price": 25,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/coffee.svg",
+      "description": "Thick Cold Coffee from the Brew Delice Café menu card.",
+      "keywords": [
+        "thick cold coffee"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "cold_coffee_with_crush",
+      "name": "Cold Coffee with Crush",
+      "emoji": "☕",
+      "price": 45,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/coffee.svg",
+      "description": "Cold Coffee with Crush from the Brew Delice Café menu card.",
+      "keywords": [
+        "cold coffee with crush"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "chocolate_coffee",
+      "name": "Chocolate Coffee",
+      "emoji": "☕",
+      "price": 50,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/coffee.svg",
+      "description": "Chocolate Coffee from the Brew Delice Café menu card.",
+      "keywords": [
+        "chocolate coffee"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "chocolate_coffee_crush",
+      "name": "Chocolate Coffee Crush",
+      "emoji": "☕",
+      "price": 55,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/coffee.svg",
+      "description": "Chocolate Coffee Crush from the Brew Delice Café menu card.",
+      "keywords": [
+        "chocolate coffee crush"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "brew_special_coffee",
+      "name": "Brew Special Coffee",
+      "emoji": "☕",
+      "price": 60,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/coffee.svg",
+      "description": "Brew Special Coffee from the Brew Delice Café menu card.",
+      "keywords": [
+        "brew special coffee"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "oreo_shake",
+      "name": "Oreo Shake",
+      "emoji": "🥤",
+      "price": 60,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/shake.svg",
+      "description": "Oreo Shake from the Brew Delice Café menu card.",
+      "keywords": [
+        "oreo shake"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "chocolate_shake",
+      "name": "Chocolate Shake",
+      "emoji": "🥤",
+      "price": 60,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/shake.svg",
+      "description": "Chocolate Shake from the Brew Delice Café menu card.",
+      "keywords": [
+        "chocolate shake"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "kitkat_shake",
+      "name": "KitKat Shake",
+      "emoji": "🥤",
+      "price": 70,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/shake.svg",
+      "description": "KitKat Shake from the Brew Delice Café menu card.",
+      "keywords": [
+        "kitkat shake",
+        "kit kat shake"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "bourbon_shake",
+      "name": "Bourbon Shake",
+      "emoji": "🥤",
+      "price": 80,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/shake.svg",
+      "description": "Bourbon Shake from the Brew Delice Café menu card.",
+      "keywords": [
+        "bourbon shake"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "cold_coffee_with_ice_cream",
+      "name": "Cold Coffee with Ice Cream",
+      "emoji": "☕",
+      "price": 80,
+      "category": "Coffee & Shakes",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/coffee.svg",
+      "description": "Cold Coffee with Ice Cream from the Brew Delice Café menu card.",
+      "keywords": [
+        "cold coffee with ice cream"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "combo_99",
+      "name": "Combo Offer",
+      "emoji": "🍱",
+      "price": 99,
+      "category": "Combo & Extras",
+      "main_attraction": false,
+      "orderable": true,
+      "available": true,
+      "image": "images/food/burger.svg",
+      "description": "Combo offer at ₹99, as printed on the café's menu card (contents as per the café).",
+      "keywords": [
+        "combo",
+        "combo offer"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    },
+    {
+      "id": "extra_cheese",
+      "name": "Extra Cheese",
+      "emoji": "🧀",
+      "price": 10,
+      "category": "Combo & Extras",
+      "main_attraction": false,
+      "orderable": false,
+      "available": true,
+      "image": "images/food/sandwich.svg",
+      "description": "Add extra cheese to your order for ₹10 (add-on, as printed on the café's menu card).",
+      "keywords": [
+        "extra cheese"
+      ],
+      "ordering_links": {
+        "zomato": "",
+        "swiggy": "",
+        "toing": ""
+      }
+    }
+  ],
+  "category_emoji": {
+    "Burger": "🍔",
+    "Sandwich": "🥪",
+    "Mojito": "🍹",
+    "Coffee & Shakes": "☕",
+    "French Fries": "🍟",
+    "Pizza": "🍕",
+    "Combo & Extras": "🍱"
+  },
+  "category_keywords": {
+    "Burger": [
+      "burgers",
+      "burger menu"
+    ],
+    "Sandwich": [
+      "sandwich",
+      "sandwiches"
+    ],
+    "Mojito": [
+      "mojito",
+      "mojitos"
+    ],
+    "Coffee & Shakes": [
+      "cold coffee",
+      "shake",
+      "shakes",
+      "coffee menu",
+      "cold drinks"
+    ],
+    "Combo & Extras": [
+      "extras",
+      "extra"
+    ],
+    "French Fries": [],
+    "Pizza": [
+      "pizzas"
+    ]
+  }
+}

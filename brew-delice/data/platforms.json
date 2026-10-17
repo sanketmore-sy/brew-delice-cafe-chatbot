@@ -1,0 +1,29 @@
+{
+  "_note": "ONE place for ordering links. Set available=true and paste the EXACT Brew Delice Café listing URL only after you have opened the listing and confirmed it is this café (Pradhikaran, Nigdi). Verified status as of the 14 Oct 2026 web search: none found. 'search_url' is only a fallback shown (clearly labelled 'Find on ...') while no exact listing URL is configured; it is NOT a verified listing.",
+  "verification": {
+    "checked_on": "2026-10-14",
+    "query": "Brew Delice Café Pradhikaran Nigdi",
+    "result": "Swiggy: café's own profile link supplied by the project team on 17 Oct 2026 (verified by them). Zomato / Toing: no exact listing found - not shown."
+  },
+  "platforms": {
+    "zomato": {
+      "label": "Zomato",
+      "available": false,
+      "url": "",
+      "verified_on": null
+    },
+    "swiggy": {
+      "label": "Swiggy",
+      "available": true,
+      "url": "https://www.swiggy.com/menu/1376195?source=sharing",
+      "verified_on": "2026-10-17",
+      "note": "Link shared from the café's own Swiggy profile ('Brew Delice Cafe | Nigdi, Pune')."
+    },
+    "toing": {
+      "label": "Toing",
+      "available": false,
+      "url": "",
+      "verified_on": null
+    }
+  }
+}

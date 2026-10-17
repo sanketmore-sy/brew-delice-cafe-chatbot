@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="French fries illustration">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7e8cd"/><stop offset="1" stop-color="#eac58c"/></linearGradient>
+  <linearGradient id="box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9412f"/><stop offset="1" stop-color="#b52e20"/></linearGradient></defs>
+  <rect width="480" height="360" fill="url(#bg)"/><circle cx="70" cy="70" r="80" fill="#fff" opacity=".25"/>
+  <ellipse cx="240" cy="318" rx="130" ry="18" fill="#3b2415" opacity=".2"/>
+  <g stroke="#e8a926" stroke-linecap="round" stroke-width="22">
+    <path d="M165 210L150 70M195 210L185 48M225 210L222 36M255 210L262 44M285 210L300 58M315 210L338 84" />
+  </g>
+  <g stroke="#f6cd4f" stroke-linecap="round" stroke-width="14">
+    <path d="M165 205L152 78M195 205L187 56M225 205L224 44M255 205L260 52M285 205L298 66M315 205L336 92" />
+  </g>
+  <path d="M130 195h220l-24 125H154z" fill="url(#box)"/>
+  <path d="M130 195h220l-6 32H136z" fill="#f4b82a" opacity=".95"/>
+  <circle cx="240" cy="265" r="26" fill="#fbe8bf"/><path d="M228 272q12-26 24 0" fill="none" stroke="#b52e20" stroke-width="6" stroke-linecap="round"/>
+</svg>
